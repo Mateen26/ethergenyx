@@ -2,16 +2,16 @@ import { motion } from 'framer-motion'
 
 const cards = [
   {
-    title: 'Tailored Solutions',
-    description: 'We provide personalized IT services that cater specifically to your business needs. Our expert team ensures that each solution is unique and effective for you.',
+    title: 'Built for You',
+    description: 'Every project gets a custom approach. No templates or one-size-fits-all—we craft solutions that fit your workflow, scale, and long-term ambitions.',
   },
   {
-    title: 'Modern Design',
-    description: 'Our vibrant designs, featuring captivating neon color schemes, set your brand apart. User-centric UI/UX designs ensure an engaging experience for your customers.',
+    title: 'Thoughtful Design',
+    description: 'We create interfaces that feel intuitive and engaging. Clear layouts, purposeful interactions, and a focus on how users actually experience your product.',
   },
   {
-    title: 'AI Integration',
-    description: 'Incorporating advanced AI elements, we optimize your applications to enhance functionality and user engagement, staying ahead in the fast-evolving tech landscape.',
+    title: 'Smart Tech Stack',
+    description: 'We harness modern tools—including AI where it adds value—to build faster, smarter applications that adapt to an ever-changing technical landscape.',
   },
 ]
 
@@ -26,10 +26,10 @@ export default function WhyChooseUs() {
           className="text-center"
         >
           <span className="text-sm font-semibold uppercase tracking-wider text-brand-purple">
-            Why Choose Us
+            Why Work With Us
           </span>
           <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-            Discover the Unique Advantages of Partnering with Ethergenyx
+            What Makes Ethergenyx Different
           </h2>
         </motion.div>
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

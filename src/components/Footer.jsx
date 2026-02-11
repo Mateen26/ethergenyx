@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/ETHERGENYX_Logo.png'
 
 const menuLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'Services', href: '#services' },
-  { label: 'About', href: '#about' },
-  { label: 'Blog', href: '#blog' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', to: '/' },
+  { label: 'Services', to: '/services' },
+  { label: 'About', to: '/#about' },
+  { label: 'Blog', to: '/#blog' },
+  { label: 'Contact', to: '/contact' },
 ]
 
 export default function Footer() {
@@ -23,7 +24,7 @@ export default function Footer() {
               className="mt-4 h-10 w-auto opacity-90"
             />
             <p className="mt-4 max-w-sm text-sm text-gray-600">
-              Ethergenyx delivers innovative IT services to empower businesses and foster growth.
+              We build custom software and tech solutions that help businesses grow and operate more efficiently.
             </p>
           </div>
           <div>
@@ -32,13 +33,13 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-2">
               {menuLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
                     className="text-sm text-gray-600 transition hover:text-brand-purple"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

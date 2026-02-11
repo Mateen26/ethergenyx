@@ -11,7 +11,7 @@ export default function TailoredSolutions() {
           viewport={{ once: true }}
           className="text-sm font-semibold uppercase tracking-wider text-brand-purple"
         >
-          Tailored IT Solutions
+          Custom Development
         </motion.span>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,7 @@ export default function TailoredSolutions() {
           transition={{ delay: 0.05 }}
           className="mt-3 text-3xl font-bold text-white sm:text-4xl"
         >
-          Your Solutions, Our Expertise
+          Your Goals, Our Craft
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export default function TailoredSolutions() {
           transition={{ delay: 0.1 }}
           className="mt-6 text-lg text-gray-600"
         >
-          At Ethergenyx, we offer specialized services that cater to your unique business needs. We are committed to delivering modern and innovative solutions that impact your success.
+          We work with businesses of all sizes to design and build software that solves real problems and drives measurable results.
         </motion.p>
         <motion.a
           href="tel:3082052336"

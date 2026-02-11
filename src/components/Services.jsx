@@ -1,21 +1,22 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const services = [
   {
     title: 'Backend Development',
-    description: 'Our backend development services ensure robust, scalable architectures that power applications and streamline operations efficiently.',
+    description: 'Server-side systems that scale. We build APIs, databases, and infrastructure that keep your apps fast, secure, and ready to grow.',
   },
   {
     title: 'PBX Deployment',
-    description: 'We provide seamless PBX deployment services that ensure reliable, high-quality communication systems tailored to your business needs.',
+    description: 'Reliable voice and communication setups. From design to rollout, we deliver PBX systems that fit your operations and improve connectivity.',
   },
   {
     title: 'Mobile App Development',
-    description: 'We create engaging mobile applications that offer seamless user experiences and leverage the latest technology trends to enhance functionality.',
+    description: 'Native and cross-platform apps for iOS and Android. Clean code, smooth UX, and features that keep users coming back.',
   },
   {
     title: 'CRM Development',
-    description: 'We design and develop custom CRM solutions that streamline your sales, marketing, and customer support operations.',
+    description: 'Custom CRM platforms for sales, marketing, and support. Centralize data, automate workflows, and make better decisions faster.',
   },
 ]
 
@@ -32,20 +33,20 @@ export default function Services() {
               className="flex flex-col justify-center"
             >
               <span className="text-sm font-medium text-gray-500">
-                Innovative IT Solutions
+                What We Do
               </span>
               <h2 className="mt-2 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
-                Explore Our Comprehensive IT Services
+                End-to-End Tech Solutions
               </h2>
               <p className="mt-6 max-w-md text-gray-600">
-                Tailored solutions in backend development, mobile apps, UI/UX design, and PBX deployment to meet your unique needs.
+                Backend systems, mobile apps, UI/UX design, and PBX deployment—all built to fit your needs and scale with your business.
               </p>
-              <a
-                href="#contact"
+              <Link
+                to="/services"
                 className="mt-8 inline-flex w-fit rounded-lg border border-brand-purple/60 bg-brand-purple/10 px-6 py-3 text-sm font-semibold text-brand-purple transition hover:border-brand-purple hover:shadow-glow-purple"
               >
                 All Services
-              </a>
+              </Link>
             </motion.div>
             <div className="space-y-4">
               {services.map((service, i) => (

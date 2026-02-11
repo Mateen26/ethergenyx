@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiArrowUp } from 'react-icons/hi'
 import Header from './components/Header'
@@ -11,6 +12,8 @@ import Testimonials from './components/Testimonials'
 import WhoWeAre from './components/WhoWeAre'
 import JoinUs from './components/JoinUs'
 import Footer from './components/Footer'
+import ServicesPage from './pages/ServicesPage'
+import ContactPage from './pages/ContactPage'
 
 function ScrollToTop() {
   const [visible, setVisible] = useState(false)
@@ -46,20 +49,32 @@ function ScrollToTop() {
   )
 }
 
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <WhyChooseUs />
+      <TailoredSolutions />
+      <Services />
+      <Testimonials />
+      <WhoWeAre />
+      <JoinUs />
+      <Footer />
+    </>
+  )
+}
+
 function App() {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 antialiased">
       <Header />
       <ProgressBar />
       <main>
-        <Hero />
-        <WhyChooseUs />
-        <TailoredSolutions />
-        <Services />
-        <Testimonials />
-        <WhoWeAre />
-        <JoinUs />
-        <Footer />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </main>
       <ScrollToTop />
     </div>

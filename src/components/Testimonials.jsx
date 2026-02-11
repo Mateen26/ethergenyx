@@ -3,17 +3,17 @@ import { HiOutlineChatAlt2 } from 'react-icons/hi'
 
 const testimonials = [
   {
-    text: 'Ethergenyx transformed our digital presence. Their team not only understood our vision but brought it to life beautifully. Highly recommended!',
+    text: 'They took our rough concept and turned it into something we’re proud to ship. Responsive, clear communicators, and the work speaks for itself.',
     name: 'James Smith',
     avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=James',
   },
   {
-    text: 'Working with Ethergenyx was a game-changer for our app. Their innovative approach and attention to detail exceeded our expectations!',
+    text: 'Our app launch went smoothly thanks to Ethergenyx. They caught details we missed and delivered ahead of schedule. Couldn’t ask for more.',
     name: 'Emily Johnson',
     avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Emily',
   },
   {
-    text: "The level of service and expertise from Ethergenyx is unparalleled. They truly care about their clients' success. We're thrilled with the results!",
+    text: 'Professional, thorough, and genuinely invested in our success. The final product exceeded what we had in mind. Will work with them again.',
     name: 'Michael Brown',
     avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Michael',
   },
@@ -29,7 +29,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center text-3xl font-bold text-white sm:text-4xl"
         >
-          What Our Clients Say
+          Client Stories
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 16 }}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 export default function JoinUs() {
@@ -10,17 +11,17 @@ export default function JoinUs() {
         className="mx-auto max-w-4xl rounded-t-3xl border border-gray-200 border-b-0 bg-gradient-to-br from-brand-purple/10 to-neon-magenta/10 px-8 py-16 text-center sm:px-12 lg:px-16"
       >
         <span className="text-sm font-semibold uppercase tracking-wider text-brand-purple">
-          Join Us
+          Ready to Start?
         </span>
         <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-          Take Your Business to the Next Level with Our Expert IT Solutions Today!
+          Let&apos;s Build Something Great Together
         </h2>
-        <a
-          href="#contact"
+        <Link
+          to="/contact"
           className="mt-8 inline-block rounded-lg bg-brand-purple px-8 py-4 font-semibold text-white transition hover:shadow-glow-purple"
         >
           Get Started
-        </a>
+        </Link>
         <p className="mt-8 text-sm text-gray-600">or call us at:</p>
         <a
           href="tel:3082052336"

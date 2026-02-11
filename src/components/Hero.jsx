@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const heroImage = 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=90'
@@ -6,45 +7,47 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen bg-white pt-[72px]"
+      className="relative overflow-hidden bg-gradient-to-b from-gray-50/50 to-white pt-[72px] pb-12 sm:pb-16"
     >
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-16 lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-24 xl:gap-16">
+      <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-purple/[0.04]" aria-hidden="true" />
+      <div className="absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-brand-purple/[0.03]" aria-hidden="true" />
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 pt-10 pb-4 sm:gap-8 sm:pt-14 sm:pb-6 lg:grid-cols-2 lg:items-center lg:gap-10 lg:pt-16 lg:pb-8">
         <div className="order-2 lg:order-1">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold uppercase tracking-wider text-brand-purple"
+            className="inline-block rounded-full border border-brand-purple/30 bg-brand-purple/5 px-4 py-1.5 text-sm font-semibold tracking-wider text-brand-purple"
           >
-            Innovative IT Solutions
+            Technology Meets Creativity
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="mt-3 text-4xl font-bold leading-tight text-gray-900 sm:text-5xl lg:text-6xl"
+            className="mt-4 text-4xl font-bold leading-[1.15] tracking-tight text-gray-900 sm:text-5xl lg:text-[3.25rem]"
           >
-            Transforming Ideas into Reality
+            Build What You Imagine
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-6 max-w-xl text-lg text-gray-600"
+            className="mt-4 max-w-xl text-lg leading-relaxed text-gray-600"
           >
-            At Ethergenyx, we specialize in cutting-edge backend development, mobile app solutions, and stunning UI/UX designs that meet your every need.
+            Ethergenyx brings your vision to life with powerful backends, mobile applications, and thoughtful interface design tailored to your goals.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <a
-              href="#contact"
-              className="mt-8 inline-block rounded-lg border-2 border-brand-purple bg-brand-purple/10 px-8 py-4 font-semibold text-brand-purple transition hover:bg-brand-purple/20 hover:shadow-glow-purple"
+            <Link
+              to="/contact"
+              className="mt-6 inline-block rounded-xl border-2 border-brand-purple bg-brand-purple px-6 py-3.5 font-semibold text-white shadow-lg shadow-brand-purple/25 transition hover:bg-brand-purple/90 hover:shadow-xl hover:shadow-brand-purple/30"
             >
               Get Started
-            </a>
+            </Link>
           </motion.div>
         </div>
         <motion.div
@@ -53,11 +56,11 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="order-1 lg:order-2"
         >
-          <div className="relative overflow-hidden rounded-2xl border border-gray-200 shadow-2xl">
+          <div className="relative overflow-hidden rounded-2xl border border-gray-200/80 shadow-xl ring-1 ring-gray-900/5">
             <img
               src={heroImage}
               alt="Server and technology"
-              className="h-[280px] w-full object-cover sm:h-[360px] lg:h-[480px]"
+              className="h-[240px] w-full object-cover object-center sm:h-[300px] lg:h-[380px]"
             />
           </div>
         </motion.div>
