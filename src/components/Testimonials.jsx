@@ -4,18 +4,18 @@ import { HiOutlineChatAlt2 } from 'react-icons/hi'
 const testimonials = [
   {
     text: 'They took our rough concept and turned it into something we’re proud to ship. Responsive, clear communicators, and the work speaks for itself.',
-    name: 'James Smith',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=James',
+    name: 'Marcus Chen',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus',
   },
   {
     text: 'Our app launch went smoothly thanks to Ethergenyx. They caught details we missed and delivered ahead of schedule. Couldn’t ask for more.',
-    name: 'Emily Johnson',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Emily',
+    name: 'Sarah Patel',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah',
   },
   {
     text: 'Professional, thorough, and genuinely invested in our success. The final product exceeded what we had in mind. Will work with them again.',
-    name: 'Michael Brown',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Michael',
+    name: 'David Okonkwo',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=David',
   },
 ]
 

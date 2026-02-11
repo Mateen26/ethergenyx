@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion'
-import { HiPhone } from 'react-icons/hi'
 
 export default function TailoredSolutions() {
   return (
-    <section className="relative bg-white py-20 sm:py-24">
-      <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+    <section className="relative bg-white py-10 sm:py-14">
+      <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +17,7 @@ export default function TailoredSolutions() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.05 }}
-          className="mt-3 text-3xl font-bold text-white sm:text-4xl"
+          className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl"
         >
           Your Goals, Our Craft
         </motion.h2>
@@ -27,21 +26,10 @@ export default function TailoredSolutions() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="mt-6 text-lg text-gray-600"
+          className="mt-4 text-base text-gray-600"
         >
           We work with businesses of all sizes to design and build software that solves real problems and drives measurable results.
         </motion.p>
-        <motion.a
-          href="tel:3082052336"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.15 }}
-          className="mt-8 inline-flex items-center gap-2 text-brand-purple underline decoration-brand-purple/60 underline-offset-4 transition hover:text-brand-purple hover:decoration-brand-purple"
-        >
-          <HiPhone className="h-5 w-5" />
-          <span>(308) 205-2336</span>
-        </motion.a>
       </div>
     </section>
   )

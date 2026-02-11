@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi'
+import { HiMail, HiPhone } from 'react-icons/hi'
 import Footer from '../components/Footer'
 
 export default function ContactPage() {
@@ -110,7 +110,7 @@ export default function ContactPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="mt-2 block w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-brand-purple focus:outline-none focus:ring-1 focus:ring-brand-purple"
-                      placeholder="(308) 205-2336"
+                      placeholder="(929) 636-6629"
                     />
                   </div>
                   <div>
@@ -162,13 +162,13 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-xl font-bold text-gray-900">Other ways to reach us</h2>
                 <p className="mt-2 text-gray-600">
-                  Call, email, or stop by—we&apos;re here when you need us.
+                  Call or email—we&apos;re here when you need us.
                 </p>
               </div>
 
               <div className="space-y-6">
                 <a
-                  href="tel:3082052336"
+                  href="tel:9296366629"
                   className="flex items-start gap-4 rounded-xl border border-gray-200 bg-white p-6 transition hover:border-brand-purple/40 hover:shadow-md"
                 >
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-purple/10 text-brand-purple">
@@ -176,7 +176,7 @@ export default function ContactPage() {
                   </span>
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
-                    <p className="mt-1 text-gray-600">(308) 205-2336</p>
+                    <p className="mt-1 text-gray-600">(929) 636-6629</p>
                   </div>
                 </a>
                 <a
@@ -191,17 +191,6 @@ export default function ContactPage() {
                     <p className="mt-1 text-gray-600">info@ethergenyx.com</p>
                   </div>
                 </a>
-                <div className="flex items-start gap-4 rounded-xl border border-gray-200 bg-white p-6">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-purple/10 text-brand-purple">
-                    <HiLocationMarker className="h-6 w-6" />
-                  </span>
-                  <div>
-                    <p className="font-semibold text-gray-900">Address</p>
-                    <p className="mt-1 text-gray-600">
-                      909 Kiefer Ridge Dr, Ballwin, MO 63021 USA
-                    </p>
-                  </div>
-                </div>
               </div>
             </motion.div>
           </div>

@@ -24,10 +24,10 @@ export default function JoinUs() {
         </Link>
         <p className="mt-8 text-sm text-gray-600">or call us at:</p>
         <a
-          href="tel:3082052336"
+          href="tel:9296366629"
           className="mt-2 inline-block font-semibold text-brand-purple underline decoration-brand-purple/60 underline-offset-4 hover:decoration-brand-purple"
         >
-          (308) 205-2336
+          (929) 636-6629
         </a>
       </motion.div>
     </section>

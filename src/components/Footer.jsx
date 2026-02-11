@@ -4,8 +4,6 @@ import logo from '../assets/ETHERGENYX_Logo.png'
 const menuLinks = [
   { label: 'Home', to: '/' },
   { label: 'Services', to: '/services' },
-  { label: 'About', to: '/#about' },
-  { label: 'Blog', to: '/#blog' },
   { label: 'Contact', to: '/contact' },
 ]
 
@@ -50,11 +48,8 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-gray-600">
               <li>
-                <span className="text-gray-500">A:</span> 909 Kiefer Ridge Dr, Ballwin, MO 63021 USA
-              </li>
-              <li>
                 <span className="text-gray-500">P:</span>{' '}
-                <a href="tel:3082052336" className="hover:text-brand-purple">(308) 205-2336</a>
+                <a href="tel:9296366629" className="hover:text-brand-purple">(929) 636-6629</a>
               </li>
               <li>
                 <span className="text-gray-500">E:</span>{' '}
@@ -71,6 +66,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8 text-center text-sm text-gray-500">
           Copyright © 2026 Ethergenyx
+          <p className="mt-2">EtherGenyx is an Ether Inc Company.</p>
         </div>
       </div>
     </footer>

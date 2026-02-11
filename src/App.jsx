@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiArrowUp } from 'react-icons/hi'
 import Header from './components/Header'
@@ -15,7 +15,17 @@ import Footer from './components/Footer'
 import ServicesPage from './pages/ServicesPage'
 import ContactPage from './pages/ContactPage'
 
-function ScrollToTop() {
+function ScrollToTopOnNavigate() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [pathname])
+
+  return null
+}
+
+function ScrollToTopButton() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -67,6 +77,7 @@ function HomePage() {
 function App() {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 antialiased">
+      <ScrollToTopOnNavigate />
       <Header />
       <ProgressBar />
       <main>
@@ -76,7 +87,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
-      <ScrollToTop />
+      <ScrollToTopButton />
     </div>
   )
 }
