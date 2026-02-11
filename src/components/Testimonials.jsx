@@ -14,8 +14,8 @@ const testimonials = [
   },
   {
     text: 'Professional, thorough, and genuinely invested in our success. The final product exceeded what we had in mind. Will work with them again.',
-    name: 'David Okonkwo',
-    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=David',
+    name: 'Emma johnson',
+    avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Danielle',
   },
 ]
 

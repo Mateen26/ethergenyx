@@ -14,6 +14,8 @@ import JoinUs from './components/JoinUs'
 import Footer from './components/Footer'
 import ServicesPage from './pages/ServicesPage'
 import ContactPage from './pages/ContactPage'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import RefundPolicy from './pages/RefundPolicy'
 
 function ScrollToTopOnNavigate() {
   const { pathname } = useLocation()
@@ -85,6 +87,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
         </Routes>
       </main>
       <ScrollToTopButton />

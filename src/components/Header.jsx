@@ -68,25 +68,25 @@ export default function Header() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] bg-white/98 backdrop-blur-md md:hidden"
+            className="fixed inset-0 z-[60] bg-white md:hidden"
             onClick={() => setMobileOpen(false)}
           >
             <div className="flex justify-end p-4">
               <button
                 type="button"
-                className="rounded-lg p-2 text-gray-600 hover:text-brand-purple"
+                className="rounded-lg p-2 text-gray-900 hover:text-brand-purple"
                 onClick={() => setMobileOpen(false)}
                 aria-label="Close menu"
               >
                 <HiX className="h-8 w-8" />
               </button>
             </div>
-            <nav className="flex flex-col items-center gap-6 px-6 pt-8">
+            <nav className="flex flex-col items-center gap-8 px-6 pt-12" onClick={(e) => e.stopPropagation()}>
               {navLinks.map((link) => (
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="text-lg font-medium text-gray-800 hover:text-brand-purple"
+                  className="text-xl font-semibold text-gray-900 hover:text-brand-purple"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -94,7 +94,7 @@ export default function Header() {
               ))}
               <Link
                 to="/contact"
-                className="mt-4 rounded-lg border border-brand-purple/60 bg-brand-purple/10 px-6 py-3 font-semibold text-brand-purple"
+                className="mt-2 rounded-xl border-2 border-brand-purple bg-brand-purple px-8 py-4 text-lg font-semibold text-white"
                 onClick={() => setMobileOpen(false)}
               >
                 Get Started

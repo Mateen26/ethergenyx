@@ -56,12 +56,20 @@ export default function Footer() {
                 <a href="mailto:info@ethergenyx.com" className="hover:text-brand-purple">info@ethergenyx.com</a>
               </li>
             </ul>
-            <a
-              href="#"
-              className="mt-4 inline-block text-sm text-brand-purple underline decoration-brand-purple/60 underline-offset-4 hover:decoration-brand-purple"
-            >
-              Privacy & Refund Policy
-            </a>
+            <div className="mt-4 flex flex-col gap-2">
+              <Link
+                to="/privacy-policy"
+                className="text-sm text-gray-600 transition hover:text-brand-purple"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                to="/refund-policy"
+                className="text-sm text-gray-600 transition hover:text-brand-purple"
+              >
+                Refund Policy
+              </Link>
+            </div>
           </div>
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8 text-center text-sm text-gray-500">
