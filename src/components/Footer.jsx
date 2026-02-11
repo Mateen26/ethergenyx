@@ -35,7 +35,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-gray-600 transition hover:text-neon-cyan"
+                    className="text-sm text-gray-600 transition hover:text-brand-purple"
                   >
                     {link.label}
                   </a>
@@ -53,16 +53,16 @@ export default function Footer() {
               </li>
               <li>
                 <span className="text-gray-500">P:</span>{' '}
-                <a href="tel:3082052336" className="hover:text-neon-cyan">(308) 205-2336</a>
+                <a href="tel:3082052336" className="hover:text-brand-purple">(308) 205-2336</a>
               </li>
               <li>
                 <span className="text-gray-500">E:</span>{' '}
-                <a href="mailto:info@ethergenyx.com" className="hover:text-neon-cyan">info@ethergenyx.com</a>
+                <a href="mailto:info@ethergenyx.com" className="hover:text-brand-purple">info@ethergenyx.com</a>
               </li>
             </ul>
             <a
               href="#"
-              className="mt-4 inline-block text-sm text-neon-cyan underline decoration-neon-cyan/60 underline-offset-4 hover:decoration-neon-cyan"
+              className="mt-4 inline-block text-sm text-brand-purple underline decoration-brand-purple/60 underline-offset-4 hover:decoration-brand-purple"
             >
               Privacy & Refund Policy
             </a>

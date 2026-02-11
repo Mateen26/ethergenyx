@@ -14,7 +14,7 @@ export default function WhoWeAre() {
         >
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-0">
             <div className="flex flex-col justify-center p-8 lg:p-12">
-              <span className="text-sm font-semibold uppercase tracking-wider text-neon-cyan">
+              <span className="text-sm font-semibold uppercase tracking-wider text-brand-purple">
                 Who We Are
               </span>
               <h2 className="mt-3 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
@@ -25,7 +25,7 @@ export default function WhoWeAre() {
               </p>
               <a
                 href="#contact"
-                className="mt-8 inline-flex w-fit rounded-lg border border-neon-cyan/60 bg-neon-cyan/10 px-6 py-3 font-semibold text-neon-cyan transition hover:shadow-neon-glow-cyan"
+                className="mt-8 inline-flex w-fit rounded-lg border border-brand-purple/60 bg-brand-purple/10 px-6 py-3 font-semibold text-brand-purple transition hover:shadow-glow-purple"
               >
                 Read More
               </a>

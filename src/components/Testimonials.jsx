@@ -55,7 +55,7 @@ export default function Testimonials() {
               transition={{ delay: i * 0.1 }}
               className="relative rounded-2xl border border-gray-200 bg-gray-50 p-8 shadow-sm"
             >
-              <HiOutlineChatAlt2 className="absolute right-6 top-6 h-10 w-10 text-neon-cyan/50" />
+              <HiOutlineChatAlt2 className="absolute right-6 top-6 h-10 w-10 text-brand-purple/50" />
               <p className="pr-4 text-gray-700">{item.text}</p>
               <div className="mt-6 flex items-center gap-4">
                 <img

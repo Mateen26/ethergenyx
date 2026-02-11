@@ -9,7 +9,7 @@ export default function TailoredSolutions() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-sm font-semibold uppercase tracking-wider text-neon-cyan"
+          className="text-sm font-semibold uppercase tracking-wider text-brand-purple"
         >
           Tailored IT Solutions
         </motion.span>
@@ -37,7 +37,7 @@ export default function TailoredSolutions() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.15 }}
-          className="mt-8 inline-flex items-center gap-2 text-neon-cyan underline decoration-neon-cyan/60 underline-offset-4 transition hover:text-neon-cyan hover:decoration-neon-cyan"
+          className="mt-8 inline-flex items-center gap-2 text-brand-purple underline decoration-brand-purple/60 underline-offset-4 transition hover:text-brand-purple hover:decoration-brand-purple"
         >
           <HiPhone className="h-5 w-5" />
           <span>(308) 205-2336</span>

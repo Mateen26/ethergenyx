@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-wider text-neon-cyan">
+          <span className="text-sm font-semibold uppercase tracking-wider text-brand-purple">
             Why Choose Us
           </span>
           <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
@@ -40,10 +40,10 @@ export default function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition hover:border-neon-cyan/40 hover:shadow-md"
+              className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition hover:border-brand-purple/40 hover:shadow-md"
             >
               <h3 className="text-xl font-bold text-gray-900">{card.title}</h3>
-              <div className="mt-2 h-0.5 w-12 rounded-full bg-gradient-to-r from-neon-cyan to-neon-magenta" />
+              <div className="mt-2 h-0.5 w-12 rounded-full bg-gradient-to-r from-brand-purple to-neon-magenta" />
               <p className="mt-5 text-gray-600">{card.description}</p>
             </motion.div>
           ))}

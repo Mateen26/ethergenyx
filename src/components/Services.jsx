@@ -42,7 +42,7 @@ export default function Services() {
               </p>
               <a
                 href="#contact"
-                className="mt-8 inline-flex w-fit rounded-lg border border-neon-cyan/60 bg-neon-cyan/10 px-6 py-3 text-sm font-semibold text-neon-cyan transition hover:border-neon-cyan hover:shadow-neon-glow-cyan"
+                className="mt-8 inline-flex w-fit rounded-lg border border-brand-purple/60 bg-brand-purple/10 px-6 py-3 text-sm font-semibold text-brand-purple transition hover:border-brand-purple hover:shadow-glow-purple"
               >
                 All Services
               </a>

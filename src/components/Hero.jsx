@@ -14,7 +14,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-sm font-semibold uppercase tracking-wider text-neon-cyan"
+            className="text-sm font-semibold uppercase tracking-wider text-brand-purple"
           >
             Innovative IT Solutions
           </motion.span>
@@ -41,7 +41,7 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="mt-8 inline-block rounded-lg border-2 border-neon-cyan bg-neon-cyan/10 px-8 py-4 font-semibold text-neon-cyan transition hover:bg-neon-cyan/20 hover:shadow-neon-glow-cyan"
+              className="mt-8 inline-block rounded-lg border-2 border-brand-purple bg-brand-purple/10 px-8 py-4 font-semibold text-brand-purple transition hover:bg-brand-purple/20 hover:shadow-glow-purple"
             >
               Get Started
             </a>

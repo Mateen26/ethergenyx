@@ -21,7 +21,7 @@ export default function ProgressBar() {
       aria-hidden="true"
     >
       <div
-        className="h-full bg-gradient-to-r from-neon-cyan to-neon-magenta transition-all duration-150 ease-out"
+        className="h-full bg-gradient-to-r from-brand-purple to-neon-magenta transition-all duration-150 ease-out"
         style={{ width: `${scrollPercent}%` }}
       />
     </div>

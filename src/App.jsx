@@ -36,7 +36,7 @@ function ScrollToTop() {
           exit={{ opacity: 0, scale: 0.8 }}
           type="button"
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 flex h-12 w-12 items-center justify-center rounded-lg border border-neon-cyan/60 bg-white text-neon-cyan shadow-lg transition hover:border-neon-cyan hover:shadow-neon-glow-cyan"
+          className="fixed bottom-8 right-8 z-50 flex h-12 w-12 items-center justify-center rounded-lg border border-brand-purple/60 bg-white text-brand-purple shadow-lg transition hover:border-brand-purple hover:shadow-glow-purple"
           aria-label="Scroll to top"
         >
           <HiArrowUp className="h-5 w-5" />

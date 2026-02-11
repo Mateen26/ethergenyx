@@ -31,7 +31,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-600 transition hover:text-neon-cyan"
+                className="text-sm font-medium text-gray-600 transition hover:text-brand-purple"
               >
                 {link.label}
               </a>
@@ -41,13 +41,13 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <a
               href="#contact"
-              className="hidden rounded-lg border border-neon-cyan/60 bg-neon-cyan/10 px-5 py-2.5 text-sm font-semibold text-neon-cyan transition hover:border-neon-cyan hover:shadow-neon-glow-cyan sm:inline-block"
+              className="hidden rounded-lg border border-brand-purple/60 bg-brand-purple/10 px-5 py-2.5 text-sm font-semibold text-brand-purple transition hover:border-brand-purple hover:shadow-glow-purple sm:inline-block"
             >
               Get Started
             </a>
             <button
               type="button"
-              className="rounded-lg p-2 text-gray-600 hover:text-neon-cyan md:hidden"
+              className="rounded-lg p-2 text-gray-600 hover:text-brand-purple md:hidden"
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
             >
@@ -69,7 +69,7 @@ export default function Header() {
             <div className="flex justify-end p-4">
               <button
                 type="button"
-                className="rounded-lg p-2 text-gray-600 hover:text-neon-cyan"
+                className="rounded-lg p-2 text-gray-600 hover:text-brand-purple"
                 onClick={() => setMobileOpen(false)}
                 aria-label="Close menu"
               >
@@ -81,7 +81,7 @@ export default function Header() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-lg font-medium text-gray-800 hover:text-neon-cyan"
+                  className="text-lg font-medium text-gray-800 hover:text-brand-purple"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -89,7 +89,7 @@ export default function Header() {
               ))}
               <a
                 href="#contact"
-                className="mt-4 rounded-lg border border-neon-cyan/60 bg-neon-cyan/10 px-6 py-3 font-semibold text-neon-cyan"
+                className="mt-4 rounded-lg border border-brand-purple/60 bg-brand-purple/10 px-6 py-3 font-semibold text-brand-purple"
                 onClick={() => setMobileOpen(false)}
               >
                 Get Started
