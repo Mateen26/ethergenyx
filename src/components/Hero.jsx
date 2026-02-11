@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-
-const heroImage = 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=90'
+import heroImage from '../assets/herosection.jpeg'
 
 export default function Hero() {
   return (
@@ -59,7 +58,7 @@ export default function Hero() {
           <div className="relative overflow-hidden rounded-2xl border border-gray-200/80 shadow-xl ring-1 ring-gray-900/5">
             <img
               src={heroImage}
-              alt="Server and technology"
+              alt="Futuristic technology and innovation"
               className="h-[240px] w-full object-cover object-center sm:h-[300px] lg:h-[380px]"
             />
           </div>
